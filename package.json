@@ -1,0 +1,10 @@
+{
+    "name": "ci-cd-s3-demo-app",
+    "version": "1.0.0j",
+    "description": "A basic static app for a CI/CD demostration.",
+    "scripts": {
+        "test": "echo \"Running a quick test... Success!\" && exit 0",
+        "build": "mkdir -p dist && cp -r src/* dist/"
+    },
+    "license": "ISC"
+}
