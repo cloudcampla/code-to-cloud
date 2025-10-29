@@ -3,7 +3,7 @@
 
 # 🚀 CI/CD 5-Minute Cloud Deploy Demo
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/cloudcamp/code-to-cloud/main.yml?branch=main&label=CI%2FCD%20Status&style=flat-square)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/cloudcampla/code-to-cloud/main.yml?branch=main&label=CI%2FCD%20Status&style=flat-square)
 
 A beginner-to-intermediate demonstration project showcasing a complete **Code-to-Cloud** pipeline using **GitHub Actions** and **AWS S3** Static Website Hosting.
 
@@ -39,7 +39,7 @@ To ensure a secure deployment, we use **Programmatic Access** via a dedicated IA
 
 ### 1. Create AWS IAM Policy
 
-Create a new IAM Policy in your AWS console with the following JSON. **Replace `<YOUR_BOOTCAMP_S3_BUCKET_NAME>` with your actual bucket name.**
+Create a new IAM Policy in your AWS console with the following JSON. **Replace `<YOUR_S3_BUCKET_NAME>` with your actual bucket name.**
 
 ```json
 {
@@ -54,7 +54,7 @@ Create a new IAM Policy in your AWS console with the following JSON. **Replace `
                 "s3:GetObject"
             ],
             "Resource": [
-                "arn:aws:s3:::<YOUR_BOOTCAMP_S3_BUCKET_NAME>/*"
+                "arn:aws:s3:::<YOUR_S3_BUCKET_NAME>/*"
             ]
         }
     ]
